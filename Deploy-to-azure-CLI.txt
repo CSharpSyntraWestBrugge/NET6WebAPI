@@ -1,6 +1,6 @@
 https://github.com/CSharpSyntraWestBrugge/NET6WebAPI.git
 
-az appservice plan create --resource-group Training2 --name dev-we-webapinet6-Plan --sku F1 --is-linux
+az appservice plan create --resource-group Training2 --name dev-we-webapinet6-Plan --sku F1 --is-linux 
 
 az webapp create --resource-group Training2 --plan dev-we-webapinet6-Plan --name dev-we-webapinet6 --deployment-source-url https://github.com/HelenaCoppieters/NET6WebAPI.git --deployment-source-branch main --runtime "DOTNETCORE:6.0" --assign-identity 
 
